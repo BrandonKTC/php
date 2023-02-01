@@ -21,6 +21,7 @@ $router->add("", ['controller' => 'home', 'action' => 'index']);
 $router->add("posts", ['controller' => 'posts', 'action' => 'index']);
 // $router->add("posts/new", ['controller' => 'posts', 'action' => 'new']);
 $router->add('{controller}/{action}');
+$router->add('{controller}/{id:\d+}/{action}');
 $router->add('admin/{action}/{controller}');
 
 // Display the routing table
