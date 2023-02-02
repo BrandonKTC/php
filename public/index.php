@@ -5,39 +5,26 @@
  * PHP version 7.4
  */
 
-// echo 'Requested URL = "' . $_SERVVER['QUERY_STRING] . '"';
+/**
+ * Autoloader
+ */
+spl_autoload_register(function ($class) {
+    $root = dirname(__DIR__); // get the parent directory
+    $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
+    if (is_readable($file)) {
+        require $root . '/' . str_replace('\\', '/', $class) . '.php';
+    }
+});
 
 /*
  * Routing 
  */
-require '../Core/Router.php';
-
-$router = new Router();
-
-// echo get_class($router);
+$router = new Core\Router();
 
 // Add the routes
-$router->add("", ['controller' => 'home', 'action' => 'index']);
-$router->add("posts", ['controller' => 'posts', 'action' => 'index']);
-// $router->add("posts/new", ['controller' => 'posts', 'action' => 'new']);
+$router->add('', ['controller' => 'Home', 'action' => 'index']);
 $router->add('{controller}/{action}');
 $router->add('{controller}/{id:\d+}/{action}');
-$router->add('admin/{action}/{controller}');
 
-// Display the routing table
-echo '<pre>';
-echo htmlspecialchars(print_r($router->getRoutes(), true));
-echo '</pre>';
 
-// Match the requested route
-$url = $_SERVER['QUERY_STRING'];
-
-if ($router->match($url)) {
-    echo '<pre>';
-    var_dump($router->getParams());
-    echo '</pre>';
-} else {
-    echo "No route found for URL '$url'";
-}
-
-// echo 'Requested URL = "' . $_SERVER['QUERY_STRING'] . '"';
+$router->dispatch($_SERVER['QUERY_STRING']);
