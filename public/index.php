@@ -6,6 +6,11 @@
  */
 
 /**
+ * Twig
+ */
+require_once '../vendor/autoload.php';
+
+/**
  * Autoloader
  */
 spl_autoload_register(function ($class) {
