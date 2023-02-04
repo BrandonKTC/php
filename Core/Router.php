@@ -134,7 +134,7 @@ class Router
             }
         } else {
             // echo 'No route matched.';
-            throw new \Exception('No route matched.');
+            throw new \Exception('No route matched.', 404);
         }
     }
 

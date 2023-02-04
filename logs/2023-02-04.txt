@@ -1,0 +1,77 @@
+[04-Feb-2023 12:07:06 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/Applications/AMPPS/www/Core/Router.php' on line 137
+[04-Feb-2023 12:20:07 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/Applications/AMPPS/www/Core/Router.php' on line 137
+[04-Feb-2023 12:21:29 UTC] Uncaught exception: 'Exception' with message 'Method newAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /Applications/AMPPS/www/Core/Router.php(126): Core\Controller->__call('new', Array)
+#1 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('posts/new')
+#2 {main}
+Thrown in '/Applications/AMPPS/www/Core/Controller.php' on line 49
+[04-Feb-2023 12:21:29 UTC] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "500.html" (looked into: ../App/Views). in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php:250
+Stack trace:
+#0 /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('500.html')
+#1 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('500.html')
+#2 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(381): Twig\Environment->getTemplateClass('500.html')
+#3 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(359): Twig\Environment->loadTemplate('500.html')
+#4 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(318): Twig\Environment->load('500.html')
+#5 /Applications/AMPPS/www/Core/View.php(50): Twig\Environment->render('500.html', Array)
+#6 /Applications/AMPPS/www/Core/Error.php(71): Core\View::renderTemplate('500.html')
+#7 [internal function]: Core\Error::exceptionHandler(Object(Exc in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 250
+[04-Feb-2023 12:21:29 UTC] Uncaught exception: 'Exception' with message 'Method neeAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /Applications/AMPPS/www/Core/Router.php(126): Core\Controller->__call('nee', Array)
+#1 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('posts/nee')
+#2 {main}
+Thrown in '/Applications/AMPPS/www/Core/Controller.php' on line 49
+[04-Feb-2023 12:21:29 UTC] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "500.html" (looked into: ../App/Views). in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php:250
+Stack trace:
+#0 /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('500.html')
+#1 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('500.html')
+#2 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(381): Twig\Environment->getTemplateClass('500.html')
+#3 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(359): Twig\Environment->loadTemplate('500.html')
+#4 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(318): Twig\Environment->load('500.html')
+#5 /Applications/AMPPS/www/Core/View.php(50): Twig\Environment->render('500.html', Array)
+#6 /Applications/AMPPS/www/Core/Error.php(71): Core\View::renderTemplate('500.html')
+#7 [internal function]: Core\Error::exceptionHandler(Object(Exc in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 250
+[04-Feb-2023 12:21:33 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('posts/')
+#1 {main}
+Thrown in '/Applications/AMPPS/www/Core/Router.php' on line 137
+[04-Feb-2023 12:21:47 UTC] Uncaught exception: 'Exception' with message 'Method indAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /Applications/AMPPS/www/Core/Router.php(126): Core\Controller->__call('ind', Array)
+#1 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('posts/ind')
+#2 {main}
+Thrown in '/Applications/AMPPS/www/Core/Controller.php' on line 49
+[04-Feb-2023 12:21:47 UTC] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "500.html" (looked into: ../App/Views). in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php:250
+Stack trace:
+#0 /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('500.html')
+#1 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('500.html')
+#2 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(381): Twig\Environment->getTemplateClass('500.html')
+#3 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(359): Twig\Environment->loadTemplate('500.html')
+#4 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(318): Twig\Environment->load('500.html')
+#5 /Applications/AMPPS/www/Core/View.php(50): Twig\Environment->render('500.html', Array)
+#6 /Applications/AMPPS/www/Core/Error.php(71): Core\View::renderTemplate('500.html')
+#7 [internal function]: Core\Error::exceptionHandler(Object(Exc in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 250
+[04-Feb-2023 12:22:36 UTC] Uncaught exception: 'Exception' with message 'Method eeAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /Applications/AMPPS/www/Core/Router.php(126): Core\Controller->__call('ee', Array)
+#1 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('posts/ee')
+#2 {main}
+Thrown in '/Applications/AMPPS/www/Core/Controller.php' on line 49
+[04-Feb-2023 12:22:36 UTC] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "500.html" (looked into: ../App/Views). in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php:250
+Stack trace:
+#0 /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('500.html')
+#1 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('500.html')
+#2 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(381): Twig\Environment->getTemplateClass('500.html')
+#3 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(359): Twig\Environment->loadTemplate('500.html')
+#4 /Applications/AMPPS/www/vendor/twig/twig/src/Environment.php(318): Twig\Environment->load('500.html')
+#5 /Applications/AMPPS/www/Core/View.php(50): Twig\Environment->render('500.html', Array)
+#6 /Applications/AMPPS/www/Core/Error.php(71): Core\View::renderTemplate('500.html')
+#7 [internal function]: Core\Error::exceptionHandler(Object(Exc in /Applications/AMPPS/www/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 250
+[04-Feb-2023 12:23:48 UTC] Uncaught exception: 'Exception' with message 'Method eeAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /Applications/AMPPS/www/Core/Router.php(126): Core\Controller->__call('ee', Array)
+#1 /Applications/AMPPS/www/public/index.php(32): Core\Router->dispatch('posts/ee')
+#2 {main}
+Thrown in '/Applications/AMPPS/www/Core/Controller.php' on line 49
