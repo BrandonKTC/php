@@ -24,15 +24,13 @@ abstract class Model
 
         if ($db === null) {
 
-            try {
-                $dsn = 'mysql:host=' . Config::DB_HOST . ';dbname=' .
-                    Config::DB_NAME . ';charset=utf8';
-                $db = new PDO($dsn, Config::USERNAME, Config::PASSWORD);
+            $dsn = 'mysql:host=' . Config::DB_HOST . ';dbname=' .
+                Config::DB_NAME . ';charset=utf8';
+            $db = new PDO($dsn, Config::USERNAME, Config::PASSWORD);
 
-                return $db;
-            } catch (PDOException $e) {
-                echo $e->getMessage();
-            }
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            return $db;
         }
     }
 }
