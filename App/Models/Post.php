@@ -10,7 +10,7 @@ use PDOException;
  * 
  * PHP version 7.4
  */
-class Post
+class Post extends \Core\Model
 {
     /**
      * Get all the posts as an associative array
@@ -19,13 +19,8 @@ class Post
      */
     public static function getAll()
     {
-        $host = 'localhost';
-        $dbname = 'mvc';
-        $username = 'root';
-        $password = 'mysql';
-
         try {
-            $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+            $db = static::getDB();
 
             $stmt = $db->query('SELECT id, title, content FROM posts ORDER BY created_at');
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
